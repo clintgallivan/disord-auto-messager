@@ -1,4 +1,4 @@
-export const instructions = `This only works on Mac in chrome.
+export const instructions = `This has been tested on Mac in chrome and brave browsers...
 
 Part 1:
 

@@ -379,6 +379,7 @@ export default function App() {
       </ScrollView>
 
       <OutputItem />
+      <Text>Do Not Distribute</Text>
       <StatusBar style="auto" />
     </View>
   );
