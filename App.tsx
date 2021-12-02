@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import styles from './src/styles';
 import { Feather } from '@expo/vector-icons';
-import { instructions } from './src/instructions';
+import { Instructions, instructions } from './src/instructions';
 import { createOutput } from './src/createOutput';
 import * as Clipboard from 'expo-clipboard';
 
@@ -151,6 +151,12 @@ export default function App() {
   };
 
   const submitItem = (value, setValue, setOptions) => {
+    setOptions.push(' ' + value);
+    setValue('');
+    toggleDummy();
+  };
+
+  const submitFirstItem = (value, setValue, setOptions) => {
     setOptions.push(value);
     setValue('');
     toggleDummy();
@@ -193,7 +199,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={{ fontSize: 30, marginVertical: 20 }}>Discord Bot!</Text>
       <View style={styles.copyContainer}>
-        <Text>{instructions}</Text>
+        <Instructions />
       </View>
       <ScrollView
         style={styles.subContainer}
@@ -239,14 +245,14 @@ export default function App() {
               value={firstValue}
               onChangeText={setFirstValue}
               onSubmitEditing={() =>
-                submitItem(firstValue, setFirstValue, firstOptions)
+                submitFirstItem(firstValue, setFirstValue, firstOptions)
               }
               blurOnSubmit={false}
             ></TextInput>
             <TouchableOpacity
               style={styles.button}
               onPress={() =>
-                submitItem(firstValue, setFirstValue, firstOptions)
+                submitFirstItem(firstValue, setFirstValue, firstOptions)
               }
             >
               <Text style={styles.buttonText}>Add to First Phrase Options</Text>

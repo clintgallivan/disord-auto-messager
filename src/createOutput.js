@@ -50,7 +50,7 @@ export const createOutput = (
         '`' +
         String.raw`{\"content\":\"` +
         '${getRandomItem(firstOptions)}' +
-        ' ${getRandomItem(secondOptions)}' +
+        '${getRandomItem(secondOptions)}' +
         String.raw`\",\"tts\":false}` +
         '`,' +
         `"method": "POST",
@@ -70,8 +70,8 @@ export const createOutput = (
         '`' +
         String.raw`{\"content\":\"` +
         '${getRandomItem(firstOptions)}' +
-        ' ${getRandomItem(secondOptions)}' +
-        ' ${getRandomItem(thirdOptions)}' +
+        '${getRandomItem(secondOptions)}' +
+        '${getRandomItem(thirdOptions)}' +
         String.raw`\",\"tts\":false}` +
         '`,' +
         `"method": "POST",
@@ -91,9 +91,9 @@ export const createOutput = (
         '`' +
         String.raw`{\"content\":\"` +
         '${getRandomItem(firstOptions)}' +
-        ' ${getRandomItem(secondOptions)}' +
-        ' ${getRandomItem(thirdOptions)}' +
-        ' ${getRandomItem(fourthOptions)}' +
+        '${getRandomItem(secondOptions)}' +
+        '${getRandomItem(thirdOptions)}' +
+        '${getRandomItem(fourthOptions)}' +
         String.raw`\",\"tts\":false}` +
         '`,' +
         `"method": "POST",
