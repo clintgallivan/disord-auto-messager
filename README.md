@@ -28,4 +28,8 @@ username: bot
 
 password: discord
 
-## Feel free to use it if you would like to as well :)
+## Feel free to use it if however you like, and donations are much appreciated :)
+
+## If you would like to donate, here is my ERC-20 wallet address:
+
+0x7931159556165Df422287463364f29e39F92A487
