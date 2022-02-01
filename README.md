@@ -1,4 +1,4 @@
-# disord-bot
+# disord-auto-messager
 
 ### What is this, and why would i use it?
 
